@@ -1,0 +1,16 @@
+{
+  "name": "tech-product-crud",
+  "version": "1.0.0",
+  "description": "Single-table CRUD app (Tech Product Showcase) - Node.js, Express, SQLite",
+  "main": "server.js",
+  "scripts": {
+    "start": "node --no-warnings server.js",
+    "dev": "node --no-warnings --watch server.js"
+  },
+  "engines": { "node": ">=22.13" },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  }
+}

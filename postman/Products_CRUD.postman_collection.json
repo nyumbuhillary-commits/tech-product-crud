@@ -1,0 +1,15 @@
+{
+  "info": { "name": "Tech Products CRUD", "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json" },
+  "variable": [ { "key": "baseUrl", "value": "http://localhost:3000" } ],
+  "item": [
+    { "name": "1. GET all products", "request": { "method": "GET", "url": "{{baseUrl}}/api/products" } },
+    { "name": "2. GET one product", "request": { "method": "GET", "url": "{{baseUrl}}/api/products/1" } },
+    { "name": "3. POST create product", "request": { "method": "POST", "header": [{ "key": "Content-Type", "value": "application/json" }],
+      "body": { "mode": "raw", "raw": "{\n  \"product_name\": \"Logitech MX Master 3S\",\n  \"brand\": \"Logitech\",\n  \"category\": \"Accessories\",\n  \"price\": 99.99,\n  \"stock\": 35,\n  \"description\": \"Wireless ergonomic mouse\"\n}" },
+      "url": "{{baseUrl}}/api/products" } },
+    { "name": "4. PUT update product", "request": { "method": "PUT", "header": [{ "key": "Content-Type", "value": "application/json" }],
+      "body": { "mode": "raw", "raw": "{\n  \"product_name\": \"Logitech MX Master 3S\",\n  \"brand\": \"Logitech\",\n  \"category\": \"Accessories\",\n  \"price\": 89.99,\n  \"stock\": 50,\n  \"description\": \"Updated: price drop\"\n}" },
+      "url": "{{baseUrl}}/api/products/11" } },
+    { "name": "5. DELETE product", "request": { "method": "DELETE", "url": "{{baseUrl}}/api/products/11" } }
+  ]
+}
