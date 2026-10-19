@@ -47,7 +47,7 @@ Requires Node.js 22.13+ (you have v24, which is fine) (https://nodejs.org).
 
 Note: on Render's free tier the SQLite file resets when the service restarts/redeploys (sample data is re-seeded automatically). The first request after idle can take ~50 s.
 
-https://drive.google.com/file/d/1GHZbfAgyq4iKulNyXWlB06q-8swusBuq/view?usp=sharing
+
 
 ## What to submit (Google Form)
 - Deployed frontend link and the API links (GET, POST, PUT, DELETE all use `/api/products` and `/api/products/:id`)
